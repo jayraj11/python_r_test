@@ -1,0 +1,30 @@
+---
+title: "Module End - R"
+author: "Jayraj Maghade"
+date: '2022-04-07'
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+### Question 1
+```{r}
+print('sequence of numbers from 20 to 50 is')
+print(seq(20,50))
+print(paste('The mean of numbers from 20 to 60 is',mean(20:60)))
+print(paste('Sum of numbers from 51 to 91 is',sum(51:91)))
+```
+### Question.2 
+```{r}
+for (i in 1:100) {
+  if (i %% 3 == 0 & i %%5 == 0) { print('FizzBuzz')}
+  else if (i %% 3 == 0) {print('Fizz')}
+  else if (i %% 5 == 0) {print('Buzz')}
+  else print(i)
+}
+```
+
+
